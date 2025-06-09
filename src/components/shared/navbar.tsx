@@ -1,11 +1,11 @@
 import { Button } from "../ui/button";
 import { ModeToggle } from "./mode-toggle";
-
+import Image from "next/image";
 export default function Navbar() {
     return (
         <div className="w-full font-extralight  h-16 flex items-center justify-between px-4 md:px-10 py-2" >
             <div>
-                <img src="/logo_64.svg" alt="Game Dev Hub Logo" className="h-10" />
+                <Image src="/logo_64.svg" alt="Game Dev Hub Logo" width={40} height={40} className="h-10 w-auto" />
             </div>
             <nav className="sm:flex gap-8 text-xs hidden  " >
                 <a href="">

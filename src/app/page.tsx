@@ -1,6 +1,6 @@
 import Navbar from "@/components/shared/navbar";
 import { Button } from "@/components/ui/button";
-import {  ArrowRight, ChevronLeft, Gamepad2 } from "lucide-react";
+import { ArrowRight, ChevronLeft, Gamepad2 } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
