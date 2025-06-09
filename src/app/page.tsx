@@ -59,7 +59,7 @@ export default function Home() {
           </div>
         </div>
       </main>
-        <section className="text-white flex md:gap-10 md:grid w-full  overflow-auto grid-cols-3 gap-5 px-4 md:px-10  " >
+        <section className="text-white flex md:gap-10 md:grid w-full  overflow-auto grid-cols-3 gap-5 px-4 md:px-10 mt-20 " >
           <div className="overflow-hidden rounded-lg shrink-0 w-70 md:w-auto  relative h-80 md:h-auto " >
             <Image src="/images/showcases/AAA_char.png" alt=""  className="object-cover w-full h-full" width={400} height={320}/>
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" >
