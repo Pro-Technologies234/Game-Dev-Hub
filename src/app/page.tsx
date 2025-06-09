@@ -7,31 +7,30 @@ export default function Home() {
   return (
     <>
       <Navbar/>
-      <main className=" font-sora grid grid-rows-2" >
+      <main className="h-screen font-sora grid grid-rows-2" >
         <div className="absolute -z-100 rounded-lg overflow-hidden h-screen max-w-scrren w-full flex justify-center">
             <div className="absolute inset-0">
-            <div
-              className="w-full h-full"
-              style={{
-              background: "radial-gradient(circle at 20% 30%, rgba(0,0,0,1) 0%, transparent 70%)",
-              position: "absolute",
-              inset: 0,
-              zIndex: 1,
-              }}
-            />
-            <div className="absolute bg-black/30 inset-0 z-0" />
+              <div className="absolute inset-0"
+                style={{
+                background: "radial-gradient(circle at 20% 30%, rgba(0,0,0,1) 0%, transparent 70%)",
+                position: "absolute",
+                inset: 0,
+                zIndex: 1,
+                }}
+              />
+                <video
+                  className="-z-10  shadow-lg object-cover w-full h-full "
+                  autoPlay
+                  loop
+                  muted
+                  src="/videos/fox.mp4"
+                >
+                  Your browser does not support the video tag.
+                </video>
+              <div className="absolute bg-black/30 inset-0 z-0" />
             </div>
-          <video
-            className="-z-10  shadow-lg object-cover w-full h-full "
-            autoPlay
-            loop
-            muted
-            src="/videos/fox.mp4"
-          >
-            Your browser does not support the video tag.
-          </video>
         </div>
-        <div className="mt-20 grid grid-rows-3">
+        <div className="h-full mt-20">
           <h1 className="px-5 text-white text-3xl md:text-5xl lg:text-6xl font-bold text-center md:leading-tight lg:leading-normal" >
             <span className="text-red-500 " >Show</span> your work. <span className="text-red-500 " >Share</span> your process. <span className="text-red-500 " >Connect</span> with devs like you.
           </h1>
@@ -52,7 +51,7 @@ export default function Home() {
                 Share your games. Write your devlogs. Inspire others.
                  Join a growing community of creators.
               </p>
-              <Button size={"sm"} className="text-xs mt-2 dark:bg-stone-950 bg-white text-rose-500">
+              <Button size={"sm"} className="cursor-pointer text-xs mt-2 dark:bg-stone-950 bg-white text-rose-500">
                 <Gamepad2  />
                 Browse Games
               </Button>
@@ -60,7 +59,7 @@ export default function Home() {
           </div>
         </div>
       </main>
-        <section className="text-white flex md:gap-10 md:grid w-full  overflow-auto grid-cols-3 gap-5 px-4 md:px-10 mt-10 " >
+        <section className="text-white flex md:gap-10 md:grid w-full  overflow-auto grid-cols-3 gap-5 px-4 md:px-10  " >
           <div className="overflow-hidden rounded-lg shrink-0 w-70 md:w-auto  relative h-80 md:h-auto " >
             <Image src="/images/showcases/AAA_char.png" alt=""  className="object-cover w-full h-full" width={400} height={320}/>
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" >
