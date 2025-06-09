@@ -42,8 +42,8 @@ export default function Home() {
               Join our Community
             </Button>
           </div>
-          <div className="absolute gap-5 px-10 bottom-40 md:bottom-10 left-0 right-0 flex items-center justify-center" >
-            <div className="bg-white/10 text-white backdrop-blur-xs p-2 rounded-2xl w-100" >
+          <div className="gap-5 px-10 mt-20 flex items-center justify-center " >
+            <div className="bg-white/10 text-white backdrop-blur-xs p-2 rounded-2xl w-80 md:w-100" >
               <span className="text-sm font-semibold" >
                 Start Your GameDev Journey
               </span>

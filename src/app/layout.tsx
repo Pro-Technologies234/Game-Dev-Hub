@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${sora.variable} font-sora antialiased `}
+        className={`${sora.variable} font-sora antialiased dark:bg-black bg-gray-100`}
       >
         <ThemeProvider
             attribute="class"
