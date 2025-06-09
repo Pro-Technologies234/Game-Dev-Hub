@@ -121,7 +121,7 @@ export default function Home() {
           <div className="w-full md:h-80 md:mt-20 md:px-10 grid grid-rows-3 gap-5 md:gap-20 md:grid-rows-1 md:grid-cols-2" >
               <div className=" flex flex-col gap-2 " >
                 <h3  className="font-bold text-rose-500 text-2xl" >Echo Drift</h3>
-                <p className=" italic text-xs" >"Time is your weapon. Drift through dimensions to rewrite fate."</p>
+                <p className=" italic text-xs" >&quot;Time is your weapon. Drift through dimensions to rewrite fate.&quot;</p>
                 <p className="text-xs font-light text-stone-800 dark:text-stone-300" >
                   About the Game:
                   Echo Drift is a fast-paced action-puzzle game where players manipulate time fragments to solve challenges and battle 
@@ -140,7 +140,7 @@ export default function Home() {
           <div className="md:-scale-x-100 w-full md:h-80  md:mt-20 revers md:px-10 grid grid-rows-3 gap-5 md:gap-20 md:grid-rows-1  md:grid-cols-2" >
               <div className="md:-scale-x-100 flex flex-col gap-2 " >
                 <h3  className="font-bold text-rose-500 text-2xl" >Mythlight: Trials of Orin</h3>
-                <p className=" italic text-xs" >"Wield ancient light against creeping shadows in a world reborn from myth."</p>
+                <p className=" italic text-xs" >&quot;Wield ancient light against creeping shadows in a world reborn from myth.&quot;</p>
                 <p className="text-xs font-light text-stone-800 dark:text-stone-300" >
                   About the Game:
                   In Mythlight, you play as Orin, a reluctant hero chosen by an ancient relic to restore balance to a fractured realm. 
@@ -158,7 +158,7 @@ export default function Home() {
           <div className="w-full md:h-80  md:mt-20 md:px-10 grid grid-rows-3 gap-5 md:gap-20 md:grid-rows-1 md:grid-cols-2" >
               <div className=" flex flex-col gap-2 " >
                 <h3  className="font-bold text-rose-500 text-2xl" >ByteRunner</h3>
-                <p className=" italic text-xs" >"Glitch the grid. Hack the system. Race for your digital life."</p>
+                <p className=" italic text-xs" >&quot;Glitch the grid. Hack the system. Race for your digital life.&quot;</p>
                 <p className="text-xs font-light text-stone-800 dark:text-stone-300" >
                   About the Game:
                   ByteRunner is a neon-drenched endless runner set in a corrupted metaverse. As a rogue AI fighting deletion, you’ll dash, dodge,
