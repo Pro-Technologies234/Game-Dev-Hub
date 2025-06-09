@@ -1,23 +1,23 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Sora } from "next/font/google";
+import localFont from 'next/font/local';
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider"
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const  soraFont  = Sora({
-  subsets: ["latin"],
-  variable: "--font-sora"
-});
 
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const sora = localFont({
+  src: [
+    { path: '../fonts/sora/Sora-ExtraLight.ttf', weight: '200', style: 'normal' },
+    { path: '../fonts/sora/Sora-Light.ttf',        weight: '300', style: 'normal' },
+    { path: '../fonts/sora/Sora-Regular.ttf',      weight: '400', style: 'normal' },
+    { path: '../fonts/sora/Sora-SemiBold.ttf',     weight: '600', style: 'normal' },
+    { path: '../fonts/sora/Sora-Bold.ttf',         weight: '700', style: 'normal' },
+    { path: '../fonts/sora/Sora-ExtraBold.ttf',    weight: '800', style: 'normal' },
+  ],
+  variable: '--font-sora',
+  display: 'swap',
 });
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${soraFont.variable} font-sora antialiased `}
+        className={`${sora.variable} font-sora antialiased `}
       >
         <ThemeProvider
             attribute="class"

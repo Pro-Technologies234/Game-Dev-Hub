@@ -1,14 +1,13 @@
 import Navbar from "@/components/shared/navbar";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight, ChevronLeft, ChevronRight, CircleArrowOutUpLeft, Gamepad, Gamepad2, GamepadIcon, Users2 } from "lucide-react";
-
-
+import Image from "next/image";
 
 export default function Home() {
   return (
     <>
       <Navbar/>
-      <main className="grid grid-rows-2" >
+      <main className=" font-sora grid grid-rows-2" >
         <div className="absolute -z-100 rounded-lg overflow-hidden h-screen max-w-scrren w-full flex justify-center">
             <div className="absolute inset-0">
             <div
@@ -27,7 +26,7 @@ export default function Home() {
             autoPlay
             loop
             muted
-            src="/videos/intro-3.mp4"
+            src="/videos/fox.mp4"
           >
             Your browser does not support the video tag.
           </video>
@@ -63,7 +62,7 @@ export default function Home() {
       </main>
         <section className="text-white flex md:gap-10 md:grid w-full  overflow-auto grid-cols-3 gap-5 px-4 md:px-10 mt-10 " >
           <div className="overflow-hidden rounded-lg shrink-0 w-70 md:w-auto  relative h-80 md:h-auto " >
-            <img src="/images/showcases/AAA_char.png" alt=""  className="object-cover w-full h-full"/>
+            <Image src="/images/showcases/AAA_char.png" alt=""  className="object-cover w-full h-full" width={400} height={320}/>
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" >
 
             </div>
@@ -81,7 +80,7 @@ export default function Home() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg shrink-0 w-70 md:w-auto relative h-80 md:h-auto " >
-            <img src="/images/showcases/fighting_scene.png" alt=""  className="object-cover w-full h-full"/>
+            <Image src="/images/showcases/fighting_scene.png" alt=""  className="object-cover w-full h-full" width={400} height={320}/>
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" >
 
             </div>
@@ -100,7 +99,7 @@ export default function Home() {
 
           </div>
           <div className="overflow-hidden rounded-lg shrink-0 w-70 md:w-auto relative h-80 md:h-auto " >
-            <img src="/images/showcases/castle.png" alt=""  className="object-cover w-full h-full"/>
+            <Image src="/images/showcases/castle.png" alt=""  className="object-cover w-full h-full" width={400} height={320}/>
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" >
 
             </div>
@@ -132,7 +131,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="relative row-span-2 md:row-span-1 rounded-2xl overflow-hidden " >
-                <img src="/images/showcases/echo_drift.png" alt=""  className="object-cover w-full h-full"/>
+                <Image src="/images/showcases/echo_drift.png" alt=""  className="object-cover w-full h-full" width={600} height={320}/>
                 <Button className="group overflow-hidden absolute bottom-4 right-4 bg-rose-500 hover:bg-rose-600 cursor-pointer text-white " >  
                   <ArrowRight className="-translate-x-10 group-hover:translate-x-0 transition-transform duration-500  " /><span className="-translate-x-5 group-hover:translate-x-0 transition-transform duration-200 " >Learn more</span> <ArrowRight className="-translate-x-5 group-hover:translate-x-10  transition-transform duration-300" />
                 </Button>
@@ -150,7 +149,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="md:-scale-x-100 relative row-span-2 md:row-span-1 rounded-2xl overflow-hidden " >
-                <img src="/images/showcases/mythlight.png" alt=""  className="object-cover w-full h-full"/>
+                <Image src="/images/showcases/mythlight.png" alt=""  className="object-cover w-full h-full" width={600} height={320}/>
                 <Button className="group overflow-hidden absolute bottom-4 right-4 bg-rose-500 hover:bg-rose-600 cursor-pointer text-white " >  
                   <ArrowRight className="-translate-x-10 group-hover:translate-x-0 transition-transform duration-500  " /><span className="-translate-x-5 group-hover:translate-x-0 transition-transform duration-200 " >Learn more</span> <ArrowRight className="-translate-x-5 group-hover:translate-x-10  transition-transform duration-300" />
                 </Button>
@@ -168,7 +167,7 @@ export default function Home() {
                 </p>
               </div>
               <div className=" relative row-span-2 md:row-span-1 rounded-2xl overflow-hidden " >
-                <img src="/images/showcases/byterunner.png" alt=""  className="object-cover w-full h-full"/>
+                <Image src="/images/showcases/byterunner.png" alt=""  className="object-cover w-full h-full" width={600} height={320}/>
                 <Button className="group overflow-hidden absolute bottom-4 right-4 bg-rose-500 hover:bg-rose-600 cursor-pointer text-white " >  
                   <ArrowRight className="-translate-x-10 group-hover:translate-x-0 transition-transform duration-500  " /><span className="-translate-x-5 group-hover:translate-x-0 transition-transform duration-200 " >Learn more</span> <ArrowRight className="-translate-x-5 group-hover:translate-x-10  transition-transform duration-300" />
                 </Button>
