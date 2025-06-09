@@ -35,15 +35,15 @@ export default function Home() {
             <span className="text-red-500 " >Show</span> your work. <span className="text-red-500 " >Share</span> your process. <span className="text-red-500 " >Connect</span> with devs like you.
           </h1>
           <div className="m-auto w-full flex gap-4 justify-center mt-4 " >
-            <Button className="text-xs  md:text-md md:hover:shadow-xl/30 shadow-xl/30 hover:-translate-y-3 hover:rotate-2 md:shadow-none  shadow-rose-500 bg-gradient-to-r from-red-600 hover:via-rose-500 via-red-600 to-rose-500 cursor-pointer  transition-color duration-500 text-white " >
+            <Button className="text-xs scale-80   sm:scale-100 sm:text-md md:hover:shadow-xl/30 shadow-xl/30 hover:-translate-y-3 hover:rotate-2 md:shadow-none  shadow-rose-500 bg-gradient-to-r from-red-600 hover:via-rose-500 via-red-600 to-rose-500 cursor-pointer  transition-color duration-500 text-white " >
               Join the Adventure
             </Button>
-            <Button className="text-xs  md:text-md hover:-translate-y-3 hover:-rotate-2 cursor-pointer bg-white hover:bg-white text-black transition-color duration-500 ">
+            <Button className="text-xs scale-80 sm:scale-100  sm:text-md hover:-translate-y-3 hover:-rotate-2 cursor-pointer bg-white hover:bg-white text-black transition-color duration-500 ">
               Join our Community
             </Button>
           </div>
           <div className="gap-5 px-4 md:px-10 mt-20 flex items-center justify-center " >
-            <div className="bg-white/10 text-white backdrop-blur-xs p-2 rounded-2xl w-80 md:w-100" >
+            <div className="bg-white/10 text-white backdrop-blur-xs p-2 rounded-2xl w-60 md:w-100" >
               <span className="text-sm font-semibold" >
                 Start Your GameDev Journey
               </span>
