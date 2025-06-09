@@ -43,7 +43,7 @@ export default function Home() {
             </Button>
           </div>
           <div className="gap-5 px-4 md:px-10 mt-20 flex items-center justify-center " >
-            <div className="bg-white/10 text-white backdrop-blur-xs p-2 rounded-2xl w-60 md:w-100" >
+            <div className="bg-white/10 text-white backdrop-blur-xs p-2 rounded-2xl w-70 md:w-100" >
               <span className="text-sm font-semibold" >
                 Start Your GameDev Journey
               </span>
