@@ -1,31 +1,32 @@
+import Link from "next/link";
 import { Button } from "../ui/button";
 import { ModeToggle } from "./mode-toggle";
 import Image from "next/image";
 export default function Navbar() {
     return (
-        <div className="w-full font-extralight  h-16 flex items-center justify-between px-4 md:px-10 py-2" >
+        <div className="w-full font-extralight max-w-7xl m-auto h-16 flex items-center justify-between px-4 md:px-10 py-2" >
             <div>
                 <Image src="/logo_64.svg" alt="Game Dev Hub Logo" width={40} height={40} className="h-10 w-auto" />
             </div>
             <nav className="sm:flex gap-8 text-xs hidden  " >
-                <a href="">
+                <Link href="">
                     Home
-                </a>
-                <a href="">
+                </Link>
+                <Link href="">
                     Games
-                </a>
-                <a href="">
+                </Link>
+                <Link href="">
                     Devlogs
-                </a>
-                <a href="">
+                </Link>
+                <Link href="">
                     Asset Libary
-                </a>
-                <a href="">
+                </Link>
+                <Link href="">
                     Community
-                </a>
-                <a href="">
+                </Link>
+                <Link href="">
                     Support
-                </a>
+                </Link>
             </nav>
             <div className="flex gap-2 md:gap-4 text-xs md:text-md" > 
                 <ModeToggle/>

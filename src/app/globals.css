@@ -121,3 +121,10 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+@layer components {
+  .app-color {
+    @apply  bg-gradient-to-tr from-red-600 to-rose-500 hover:bg-rose-600 
+  }
+}
