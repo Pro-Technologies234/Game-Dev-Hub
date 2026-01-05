@@ -55,10 +55,10 @@ export function Discover() {
                                         </Button>
                                     </Link>
                                     <div className="absolute bottom-0 left-0 p-4 flex flex-col gap-2 " >
-                                        <span className="font-bold white/30 backdrop-brightness-150 contrast-130 text-sm md:text-base  rounded-sm backdrop-blur-xs py-1 px-4 w-fit h-fit" >
+                                        <span className="font-bold bg-black/30  text-sm md:text-base  rounded-sm backdrop-blur-xs py-1 px-4 w-fit h-fit" >
                                             {d.title}
                                         </span>
-                                        <p className="text-xs row-span-2 font-light leading-tight font-geist line-clamp-3" >
+                                        <p className="text-xs row-span-2 max-w-xs font-light leading-tight font-geist line-clamp-3" >
                                             {d.des}
                                         </p>
                                     </div>

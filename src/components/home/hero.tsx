@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 export function Hero() {
     return(
       <main className="selection:bg-rose-600/50 " >
-        <div className="absolute -z-1 inset-0  overflow-hidden w-full flex justify-center">
+        <div className="absolute -z-1 inset-0 md:h-[45rem]  overflow-hidden w-full flex justify-center">
             <div className="absolute inset-0"
                 style={{
                     background: "radial-gradient(circle at 20% 30%, rgba(0,0,0,1) 0%, transparent 70%)",
@@ -24,7 +24,7 @@ export function Hero() {
             </video>
             <div className="absolute bg-black/30 inset-0 z-0" />
         </div>
-        <div className="h-[75vh] flex flex-col justify-center items-center gap-10">
+        <div className="h-[75vh] md:h-[40rem] flex flex-col md:pb-50 justify-center items-center gap-10">
           <h1 className=" text-white text-3xl max-w-7xl md:text-5xl lg:text-6xl font-bold text-center leading-tight font-geist" >
             <span className="text-red-500 " >Show</span> your work. <span className="text-red-500 " >Share</span> your process. <span className="text-red-500 " >Connect</span> with devs like you.
           </h1>
