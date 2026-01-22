@@ -9,29 +9,29 @@ export default function SignupPage() {
   const [message, setMessage] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setMessage("");
+    // e.preventDefault();
+    // setMessage("");
 
-    try {
-      const res = await fetch("/api/signup", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, name, password }),
-      });
+    // try {
+    //   const res = await fetch("/api/signup", {
+    //     method: "POST",
+    //     headers: { "Content-Type": "application/json" },
+    //     body: JSON.stringify({ email, name, password }),
+    //   });
 
-      const data = await res.json();
+    //   const data = await res.json();
 
-      if (res.ok) {
-        setMessage("User created successfully!");
-        setEmail("");
-        setName("");
-        setPassword("");
-      } else {
-        setMessage(data.error || "Signup failed");
-      }
-    } catch (error) {
-      setMessage("An unexpected error occurred.");
-    }
+    //   if (res.ok) {
+    //     setMessage("User created successfully!");
+    //     setEmail("");
+    //     setName("");
+    //     setPassword("");
+    //   } else {
+    //     setMessage(data.error || "Signup failed");
+    //   }
+    // } catch (error) {
+    //   setMessage("An unexpected error occurred.");
+    // }
   };
 
   return (
