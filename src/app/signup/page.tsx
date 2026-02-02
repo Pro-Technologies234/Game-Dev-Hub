@@ -11,16 +11,13 @@ export default function SignupPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     // e.preventDefault();
     // setMessage("");
-
     // try {
     //   const res = await fetch("/api/signup", {
     //     method: "POST",
     //     headers: { "Content-Type": "application/json" },
     //     body: JSON.stringify({ email, name, password }),
     //   });
-
     //   const data = await res.json();
-
     //   if (res.ok) {
     //     setMessage("User created successfully!");
     //     setEmail("");
@@ -42,7 +39,7 @@ export default function SignupPage() {
           type="text"
           placeholder="Name"
           value={name}
-          onChange={e => setName(e.target.value)}
+          onChange={(e) => setName(e.target.value)}
           className="w-full p-2 border rounded"
           required
         />
@@ -50,7 +47,7 @@ export default function SignupPage() {
           type="email"
           placeholder="Email"
           value={email}
-          onChange={e => setEmail(e.target.value)}
+          onChange={(e) => setEmail(e.target.value)}
           className="w-full p-2 border rounded"
           required
         />
@@ -58,7 +55,7 @@ export default function SignupPage() {
           type="password"
           placeholder="Password"
           value={password}
-          onChange={e => setPassword(e.target.value)}
+          onChange={(e) => setPassword(e.target.value)}
           className="w-full p-2 border rounded"
           required
         />

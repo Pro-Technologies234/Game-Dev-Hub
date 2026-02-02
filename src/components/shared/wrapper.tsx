@@ -10,7 +10,9 @@ export function Wrapper({
   wrapper?: string;
 }>) {
   return (
-    <div className={cn("max-w-[1500px] h-full mx-auto py-1 px-4 lg:px-8", wrapper)}>
+    <div
+      className={cn("max-w-[1500px] h-full mx-auto py-1 px-4 lg:px-8", wrapper)}
+    >
       <div className={cn("space-y-1 w-full h-full flex flex-col", className)}>
         {children}
       </div>

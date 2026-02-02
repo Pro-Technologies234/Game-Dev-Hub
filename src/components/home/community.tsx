@@ -5,14 +5,17 @@ export function Community() {
   return (
     <Wrapper className="gap-8">
       {/* Main heading */}
-      <div className="w-full flex flex-col justify-center items-center gap-2">
-        <h2 className="text-5xl font-semibold font-geist max-w-2xl text-center">
-          <span className="bg-clip-text app-color text-transparent">Find</span> teammates.{" "}
-          <span className="bg-clip-text app-color text-transparent">Give</span> feedback.{" "}
-          <span className="bg-clip-text app-color text-transparent">Level</span> up.
+      <div className="w-full flex justify-between items-center capitalize gap-2">
+        <h2 className="text-4xl font-semibold font-geist max-w-md  tracking-tighter">
+          Find teammates. Give feedback.{" "}
+          <span className="bg-clip-text app-color text-transparent">
+            Level up.
+          </span>{" "}
         </h2>
-        <p className="text-sm font-light max-w-lg font-geist text-muted-foreground text-center">
-          Arcade Studios is a hub for game makers: share work-in-progress builds, get feedback, recruit collaborators for jams, and join skill-focused groups.
+        <p className="text-sm leading-tight max-w-md font-geist text-muted-foreground ">
+          Arcade Studios is a hub for game makers: share work-in-progress
+          builds, get feedback, recruit collaborators for jams, and join
+          skill-focused groups.
         </p>
       </div>
 
@@ -51,49 +54,48 @@ export function Community() {
       </div> */}
 
       {/* How it works / process section */}
-      <section className="max-w-7xl selection:bg-rose-600/50 flex flex-col gap-2 items-center w-full m-auto">
-        <div className="flex gap-8 items-center my-12">
-          <div className="flex gap-2 items-center">
-            <UserRoundSearch size={64} strokeWidth={1} className="stroke-rose-600" />
-            <div className="flex flex-col">
-              <span className="text-sm font-bold app-color bg-clip-text text-transparent">
-                Find collaborators
-              </span>
-              <p className="text-xs font-light">
-                Browse creator profiles by role, skill, and interests to form your ideal team.
-              </p>
-            </div>
-          </div>
-
-          <div className="w-1 h-24 bg-gradient-to-b from-red-600 to-rose-500"></div>
-
-          <div className="flex gap-2 items-center">
-            <Gamepad2 size={64} strokeWidth={1} className="stroke-rose-600" />
-            <div className="flex flex-col">
-              <span className="text-sm font-bold app-color bg-clip-text text-transparent">
-                Host a playtest
-              </span>
-              <p className="text-xs font-light">
-                Invite community members to playtest your game and collect detailed, time-stamped feedback.
-              </p>
-            </div>
-          </div>
-
-          <div className="w-1 h-24 bg-gradient-to-b from-red-600 to-rose-500"></div>
-
-          <div className="flex gap-2 items-center">
-            <UserPlus2 size={64} strokeWidth={1} className="stroke-rose-600" />
-            <div className="flex flex-col">
-              <span className="text-sm font-bold app-color bg-clip-text text-transparent">
-                Join a jam
-              </span>
-              <p className="text-xs font-light">
-                Team up with other creators for weekly or monthly game jams to build, learn, and compete.
-              </p>
-            </div>
-          </div>
-        </div>
+      <section className=" selection:bg-rose-600/50 flex gap-2 items-center w-full m-auto">
+        {com.map((_) => (
+          <CommunityCard {..._} />
+        ))}
       </section>
     </Wrapper>
+  );
+}
+
+const com = [
+  {
+    title: "Find collaborators",
+    desc: "Browse creator profiles by role, skill, and interests to form your ideal team.",
+  },
+  {
+    title: "Host a playtest",
+    desc: "Invite community members to playtest your game and collect detailed, time-stamped feedback.",
+  },
+  {
+    title: "Join a jam",
+    desc: "Team up with other creators for weekly or monthly game jams to build, learn, and compete.",
+  },
+];
+
+export function CommunityCard({
+  title,
+  desc,
+}: {
+  title: string;
+  desc?: string;
+}) {
+  return (
+    <div className="p-1 bg-linear-to-t from-transparent via-transparent to-primary/30 rounded-3xl flex-1">
+      <div className="flex flex-col gap-2 items-center bg-linear-to-t from-background  via-red-600 to-rose-600 rounded-3xl overflow-hidden p-0.5">
+        <div className="w-full flex justify-center items-center p-1 pb-0.5">
+          <span className="text-md font-semibold ">{title}</span>
+        </div>
+        <div className="flex flex-col p-8  gap-2 items-center bg-linear-to-b from-background to-card rounded-3xl overflow-hidden">
+          <UserRoundSearch className="stroke-rose-600 size-8 font-geist" />
+          <p className="text-sm font-medium  max-sm text-center">{desc}</p>
+        </div>
+      </div>
+    </div>
   );
 }
