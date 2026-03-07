@@ -6,42 +6,50 @@ import { Badge } from "../ui/badge";
 import { IconChevronRight, IconCircleDashed } from "@tabler/icons-react";
 import { cn } from "@/lib/utils";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
+import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
 
 export function Showcase() {
   return (
     <Wrapper>
-      <section className="flex overflow-x-auto gap-4 w-full">
-        {showcases.map((s, i) => (
-          <div
-            key={i}
-            className="relative flex flex-col shrink-0 w-[42%] aspect-16/14"
-          >
-            {/* Image */}
-            <div className="relative w-full h-full overflow-hidden rounded-sm">
-              <Image
-                src={s.img}
-                alt={s.title}
-                fill
-                className="object-cover transition-transform duration-500 hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent "></div>
-              <div className="flex flex-col absolute bottom-4 left-4">
-                <Badge
-                  className={cn(
-                    "font-geist  rounded-sm font-light",
-                    s.status === "In Development"
-                      ? "text-blue-100 bg-blue-500/40 "
-                      : "text-rose-100 bg-rose-600",
-                  )}
-                >
-                  <IconCircleDashed />
-                  {s.status}
-                </Badge>
+      <Carousel
+        opts={{
+          loop: true,
+          align: "center",
+        }}
+        className=" gap-4 w-full"
+      >
+        <CarouselContent>
+          {showcases.map((s, i) => (
+            <CarouselItem
+              key={i}
+              className="relative flex flex-col shrink-0 basis-1/2 aspect-16/12"
+            >
+              {/* Image */}
+              <div className="relative w-full h-full overflow-hidden rounded-sm">
+                <Image
+                  src={s.img}
+                  alt={s.title}
+                  fill
+                  className="object-cover transition-transform duration-500 hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent "></div>
+                <div className="flex flex-col absolute bottom-4 left-4">
+                  <Badge
+                    className={cn(
+                      "font-geist  rounded-sm font-light",
+                      s.status === "In Development"
+                        ? "text-blue-100 bg-blue-500/40 "
+                        : "text-rose-100 bg-rose-600",
+                    )}
+                  >
+                    <IconCircleDashed />
+                    {s.status}
+                  </Badge>
+                </div>
               </div>
-            </div>
 
-            {/* Content */}
-            {/* <div className="p-6 flex flex-col flex-1 justify-between">
+              {/* Content */}
+              {/* <div className="p-6 flex flex-col flex-1 justify-between">
               <div>
                 <h3 className="text-2xl font-semibold mb-1 app-color text-transparent bg-clip-text">
                   {s.title}
@@ -78,9 +86,10 @@ export function Showcase() {
                 </Button>
               </div>
             </div> */}
-          </div>
-        ))}
-      </section>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+      </Carousel>
     </Wrapper>
   );
 }
